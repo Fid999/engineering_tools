@@ -1,3 +1,16 @@
+class unit_c:
+    
+    def __init__(self,x):
+        
+        self.x = x
+        
+    def mm_m(self):
+        
+        self.l = self.x/1000
+        
+        return(self.l)
+
+
 class rec:
     
     def __init__(self,x,y):
@@ -8,12 +21,6 @@ class rec:
     def area(self):
         
         self.a = self.x * self.y
-        
-        return(self.a)
-    
-    def area_mm_m(self):
-        
-        self.a = (self.x)/1000 * (self.y)/1000
         
         return(self.a)
     
