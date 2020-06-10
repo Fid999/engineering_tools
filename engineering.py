@@ -30,7 +30,7 @@ class rec:
         
         return(self.p)
     
-class cuboid_vol:
+class cuboid:
     
     def __init__(self,x,y,z):
     
@@ -38,12 +38,11 @@ class cuboid_vol:
         self.y = y
         self.z = z
         
-    def v_calc(self):
+    def volume(self):
         
         self.v = self.x * self.y * self.z
         
         return(self.v)
-    
     
 class volume:
     
@@ -65,12 +64,12 @@ class point_load:
         self.force = force
         self.length = length
         
-    def eff_force(self):
+    def moment(self):
         
         #Effective Force at Centroid of Universal Load
-        self.ef = self.force * self.length
+        self.m = self.force * self.length
         
-        return(self.ef)
+        return(self.m)
     
 class uniform_load:
     #force per unit of length
